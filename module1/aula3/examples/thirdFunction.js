@@ -9,3 +9,16 @@ function whileStruture(){
 
     alert("The final value of the variable " + value);
 }
+
+function dowhileStruture(){
+    
+    value =1;
+
+    do {
+
+        alert("Value in variable is " + value);
+        value++;
+
+    } while (value <=5);
+    alert("the value last is " + value);
+}
