@@ -10,3 +10,16 @@ function dev(){
 
     document.write("THE VALUE LAST IS " + value);
 }
+
+function dev2(){
+    age = parseInt(prompt("Age in username"));
+
+    if (age >= 18){
+        document.write("you is Bigger in Age with")
+    } else {
+        while (age < 18){
+            age++
+            document.write("user's current age increments to " + age + "<br>");
+        }
+    }
+}
