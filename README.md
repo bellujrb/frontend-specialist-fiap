@@ -6,7 +6,7 @@
 
   <h2 align="start"> About course </h2>
   
-|Module | Technologies|
+|Module | Technologies |
 |---|---|
 |  [1. JS - Logic Programming](https://github.com/belluzzojr/frontend-specialist-fiap/tree/main/module1) | JS |
 |  [2. Design UI/UX]() | Figma, Miro, UI, UX |
