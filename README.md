@@ -6,11 +6,11 @@
 
   <h2 align="start"> About course </h2>
   
-|Module | Technologies |
-|---|---|
-|  [1. JS - Logic Programming](https://github.com/belluzzojr/frontend-specialist-fiap/tree/main/module1) | JS |
-|  [2. Design UI/UX]() | Figma, Miro, UI, UX |
-|  [3. Front Programming]() | HTML, CSS, JS |
+|Module | Technologies | Hours |
+|---|---|---|
+|  [1. JS - Logic Programming](https://github.com/belluzzojr/frontend-specialist-fiap/tree/main/module1) | JS | 30H |
+|  [2. Design UI/UX]() | Figma, Miro, UI, UX | 18H |
+|  [3. Front Programming]() | HTML, CSS, JS | 30H |
 |  [4. JS - Advanced]() | JS |
 |  [5. React Framework]() | JS, REACT |
 |  [6. Angular Framework]() | JS, ANGULAR |
