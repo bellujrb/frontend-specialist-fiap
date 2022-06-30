@@ -9,6 +9,6 @@ function dev(){
     media = value / quantity;
 
     alert(value);
-    alert(quantity);
+    alert(media);
 
 }
