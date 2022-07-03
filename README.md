@@ -11,6 +11,6 @@
 |  [1. JS - Logic Programming](https://github.com/belluzzojr/frontend-specialist-fiap/tree/main/module1) | HTML, JS | 30H |
 |  [2. Design UI/UX]() | Figma, Miro, UI, UX | 18H |
 |  [3. Front Programming]() | HTML, CSS, JS | 30H |
-|  [4. JS - Advanced]() | HTML, JS |
-|  [5. React Framework]() | HTML, JS, REACT |
-|  [6. Angular Framework]() | HTML, JS, ANGULAR |
+|  [4. JS - Advanced]() | HTML, JS | ?H |
+|  [5. React Framework]() | HTML, JS, REACT | ?H |
+|  [6. Angular Framework]() | HTML, JS, ANGULAR | ?H |
