@@ -9,7 +9,7 @@ function dev(){
 
     while (count <= value){
         number = parseInt(prompt("Enter the number: "));
-        sum = sum + number;
+        sum += number;
 
         if (smallerNumber < number){
             smallerNumber = number;
