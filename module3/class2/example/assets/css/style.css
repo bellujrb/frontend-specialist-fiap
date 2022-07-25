@@ -1,0 +1,38 @@
+/* Import do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap');
+
+body {
+    background-color: #d1d1d1;
+}
+
+
+h1, h2, h3, h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 45px;
+     color:  rgb(231, 105, 31);
+     background-color: #333;
+     text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    color: #0059ff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+span {
+   color: #f60;
+   font-size: 50px;
+   }
