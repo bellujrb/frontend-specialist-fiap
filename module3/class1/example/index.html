@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en"> // Inicio da Pagina
-<head> // Recursos Externos
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Class 01 - Exercise 01</title> // Aba Navegador
-</head> //Fim Cabecalho
-<body> 
-    //Conteudo da Pagina
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 - Web Front</title>
+
+    <!-- Inserindo CSS Interno: usar a tag style - dentro dela devemos
+    definir quem será formatado, para isso usamos a seguinte 
+    sintaxe:
+    
+    REGRA CSS
+    seletor {
+        propriedade: valor;
+    }
+    seletor: elemento HTML que desejamos formatar
+    propriedade: o que eu quero formatar no elemento
+    valor: como ficará a propriedade 
+
+    NÃO USAR - EVITAR AO MÁXIMO
+    
+    <style>
+        h2 {
+            color: blue;
+            font-size: 40px;
+        }
+    </style>
+-->
+
+<!-- LINKAR UMA FOLHA DE ESTILOS - USAR ESSE -->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <h1>MyDrones</h1>
+    <!-- <h2>MyDrones</h2>
+    <h3>MyDrones</h3>
+    <h4>MyDrones</h4>
+    <h5>MyDrones</h5>
+    <h6>MyDrones</h6> -->
+
+    <p>
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, tenetur tempora expedita eveniet minus, et, rem rerum dignissimos laborum minima amet tempore totam. Illum modi ut maiores consequatur, optio ad vel nihil voluptatem labore dolores ipsa earum molestias veniam ex quis architecto natus incidunt libero harum commodi et. Sed quos, consequatur accusamus fugiat qui nulla labore, modi doloribus, inventore cupiditate aliquam quia commodi molestiae error corporis minima mollitia totam odio.
+    </p>
+
+    <!-- Inserindo CSS inline:  feita diretamente na linha que queremos
+    formatar - PESSIMO - NÃO USAR
+    Para isso, usamos o atributo style, seguido do que queremos
+    formatar -->
+    <h2 style="color: red; font-size: 35px;">Drone XPTO</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo numquam quas nulla incidunt dolores ullam cupiditate minus optio maxime! Cupiditate nostrum, quasi praesentium, odit iure ut quidem provident illum blanditiis enim facilis. Distinctio alias, dignissimos vitae odio quaerat veniam nam quo beatae ex corrupti sit eum odit non. Omnis, mollitia?
+    </p>
+    <img src="./assets/images/pexels-inmortal-producciones-336232.jpg" alt="Drone voando no céu azul">
+    
+    <!-- Lista ordenada -->
+    <h3>Características</h3>
+    <ol>
+        <li>Peso: 450g</li>
+        <li>Autonomia: 3horas</li>
+        <li>Largura: 90cm</li>
+        <li>Preço: R$ 1250,00</li>
+    </ol>
+
+
+
+    <h2>Drone ASDF</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus fugit optio rem incidunt iure corporis nesciunt distinctio illo voluptate, magni excepturi unde modi reprehenderit provident deleniti. Magni labore aspernatur rerum assumenda. Molestias doloremque rerum consequuntur esse quia odit quas eum. Iusto veritatis cupiditate pariatur exercitationem provident dolores, esse ipsum?
+    </p>
+    <img src="./assets/images/pexels-jeshootscom-442587.jpg" alt="Drone voando no fim de tarde">
+    
+    <!-- Lista não ordenada -->
+    <h3>Características</h3>
+    <ul>
+        <li>Peso: 550g</li>
+        <li>Autonomia: 4 horas</li>
+        <li>Largura: 110cm</li>
+        <li>Preço: R$ 1550,00</li>
+    </ul>
+
+    <h2>Drone QWER</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi optio commodi totam minima illum nisi ab. Sed pariatur accusamus optio nobis fugit natus, ad deserunt aperiam quia animi temporibus magnam est officiis ex quibusdam ipsum a unde eveniet. Sint amet odio quae nemo fugit alias. Soluta accusantium sint facilis veritatis.
+    </p>
+    <img src="./assets/images/pexels-pok-rie-724921.jpg" alt="Drone voando em uma nuvem de chuva">
+    
+    <!-- Lista não ordenada -->
+    <h3>Características</h3>
+    <ul>
+        <li>Peso: 350g</li>
+        <li>Autonomia: 2 horas</li>
+        <li>Largura: 60cm</li>
+        <li>Preço: R$ 999,00</li>
+    </ul>
+
+
 </body>
-</html> //Fim da Pagina
+</html>
