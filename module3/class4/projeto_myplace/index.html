@@ -6,25 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Chamada Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fim da Chamada Font-Awesome-->
+
+    <!--Chamar JS-->
+    <script src="script.js"></script>
+    <!--Fim do Chamado-->
+
     <title>MyPlace</title>
 </head>
 <body>
 
-    <!--Header Da Pagina-->
-    <nav class="header">
+    <!--Inicio do Menu Principal-->
+    <nav class="nav-bar">
         <!--Nome do APP - LOGO -->
-        <h1 class="header-title">My<span class="header-title2">Place</span></h1>
+        <h1 class="nav-title">MyPlace</h1>
 
         <!--Opcoes do Menu-->
-        <ul class="header-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#tours">Passeios</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact" class="button">Contato</a></li>
         </ul>
-        <!--Fim do Header-->
-
+        <i class="fa-solid fa-list iconlist"></i>
+        <!--Fim do Menu Principal-->
     </nav>
+
+    <!-- Header + Menu + hero-->
+    <header class="hero">
+        <h2 class="hero-title">O MyPlace e exatamente assim...</h2>
+        <div class="line"></div>
+        <p class="hero-text">Simplesmente Maravilhoso</p>
+        <a href="#" class="button">Mais Informacoes</a>
+    </header>
+
+    <!-- Fim Header + Menu + hero-->
+
+    <div class="box" id="tours">Passeios</div>
+    <div class="box" id="explore">Explore</div>
+    <div class="box" id="about">Sobre</div>
+    <div class="box" id="contact">Contato</div>
 </body>
 </html>

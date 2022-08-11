@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Menu Responsivo (MEDIA QUERIES)
+Montar uma regra para telas de no maximo850px, a regra abaixo sera usada por essas telas.
+Tamanhos maiores usarao a regra acima.
+*/
+
+@media(max-width: 850px){
+    
+    .iconlist{
+        display: block;
+        margin: 0;
+
+    }
+    .nav-menu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 32%;
+
+        font-size: 30px;
+        gap: 1rem;
+
+        margin-top: -1100px;
+        transition: .5s;
+    }
+
+    .mobile-menu{
+        margin-top: 0;
+    }
+
+    .nav-title{
+        position: absolute;
+    }
+
+    .nav-menu a{
+        font-weight: 700;
+        font-size: 2.5rem;
+        color:var(--color-white);
+        transition: .5s;
+    }
+}
