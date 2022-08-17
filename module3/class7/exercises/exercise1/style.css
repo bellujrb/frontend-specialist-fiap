@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    font-family: calibri;
+}
+
+table {
+    width: 40%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+    background-color: #ccc;
+}
+
+th, td{
+    border-bottom: 1px solid #ccc;
+    width: 25%;
+    text-align: center;
+    line-height: 40px;
+}
+
+thead tr, tfoot tr{
+    background-color: #ccc;
+}
+
+tbody tr:hover{
+    background-color: #e4e4e4;
+}
