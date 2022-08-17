@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+    <style>
+        body{font-family: calibri;}
+        fieldset, div{margin: 20px 0;}
+        div{border: 1px solid #666; padding: 10px 15px;}
+        
+        textarea{
+            width: 100%;
+            height: 150px;
+            resize: none;
+        }
+    </style>
+<body>
+    <!--Iniciar formulario-->
+    <!--FieldSet OCUPA 100% com tag 
+        legend para colocar titulo.-->
+    <form action="" id="dados" name="dados" method="post">
+        <!--Campo de Texto-->        
+        <fieldset>
+            <legend>
+                Dados do usuario
+            </legend>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario"
+            placeholder="Digite seu usuario" minlength="10"
+            maxlength="15" required>
+</fieldset>
+        <!--Fim Campo de Texto-->
+        <!--Campo de Senha-->
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password"
+            placeholder="Ex: 123456" minlength="10" maxlength="15"
+            required>
+        </div>
+        <!--Button Radio = Escolhe uma opcao{Marca/Desmarca}-->
+        <!--Permitir apenas uma opcao selecionada-->
+        <div>
+            <h4>Selecione sua area de atuacao</h4>
+            <input type="radio" name="occupation" id="Medico" value="1">
+                <label for="Medico">Medico</label>
+                <input type="radio" name="occupation" id="Advogado" value="2">
+                <label for="Advogado">Advogado</label>            
+                <input type="radio" name="occupation" id="Engenheiro" value="3">
+                <label for="Engenheiro">Engenheiro</label>            
+            <!--Opcao JA SELECIONADA. = CHECKED-->
+            <!--NAO RECOMENDAVEL.-->
+                <input type="radio" name="occupation" id="Desenvolvedor" value="4" checked>
+                <label for="Desenvolvedor">Desenvolvedor</label>
+        </div>
+        <!--Campo Select-->
+        <!--"SELECTED OBRIGA APARECER."
+        O ITEM QUE VAI APARECER EM 1-->
+        <div>
+            <label for="formacion">Selecione sua Formacao</label>
+            <select name="formacion" id="formacion">
+                <option value="0" disabled selected>Escolha uma opcao</option>
+                <option value="1">Ensino Medio</option>
+                <option value="2">Ensino Superior</option>
+                <option value="3">POS Graduacao</option>
+            </select>
+        </div>
+        <!--Fim Do campo SELECT-->
+        <!--Comeco do datalist-->
+        <!--DataList "TIPO UM CAMPO DE BUSCA"-->
+        <div>
+            <label for="formacion1">Selecione sua Formacao (DataList)</label>
+            <input list="formacion1">
+            <datalist id="formacion1">
+                <option value="Ensino Medio">
+                <option value="Ensino Superior">
+                <option value="Ensino POS GRADUACAO">    
+            </datalist>
+        </div>
+        <!--Fim do datalist-->
+        <!--Comeco de Upload-->
+        <div>
+            <label for="arquive">Selecione o Arquivo</label>
+            <input type="file" name="arquive" id="arquive">
+        </div>
+        <!--Fim do campo Upload-->
+        <!--Campo de Data-->
+        <div>
+            <label for="travel">Selecione a data da viagem</label>
+            <input type="date" id="travel" name="travel">
+        </div>
+        <!--Fim do campo data-->
+        <!--Campo de hora-->
+        <div>
+            <label for="hours">Hora do embarque</label>
+            <input type="time" name="hours" id="hours">
+        </div>
+        <!--Fim do campo hora-->
+        <!--Campo de data e hora-->
+        <div>
+            <label for="dateandhours">Data e hora do embarque</label>
+            <input type="datetime-local" name="dateandhours" id="dateandhours">
+        </div>
+        <!--Fim do campo data e hora-->
+        <!--Campo para mes-->
+        <div>
+            <label for="month">Selecione um mes para a viagem</label>
+            <input type="month" name="month" id="moth">
+        </div>
+        <!--Fim do campo MES-->
+        <!--Campo para a Semana-->
+        <div>
+            <label for="week">Semana</label>
+            <input type="week" name="week" id="week">
+        </div>
+        <!--Fim do campo SEMANA-->
+        <!--Campo para numero-->
+        <div>
+            <!--"STEP" intervalo sobre os itens-->
+            <label for="number">Numero</label>
+            <input type="number" name="number" id="number"
+            min="10" max="100" step="10">
+        </div>
+        <!--Fim do campo de NUMERO-->
+        <!--Campo de numero com barra-->
+        <div>
+            <label for="rangevalue">Selecione um valor</label>
+            <input type="range" name="rangevalue" id="rangevalue"
+            min="100" max="500" step="10" value="250">
+            <p id="crate"></p>
+        </div>
+        <!--Fim campo de numero com barra-->
+        <!--Campo para telefone-->
+        <div>
+            <label for="cellphone">Celular</label>
+            <input type="tel" name="cellphone" id="cellphone"
+            minlength="11" maxlength="11">
+        </div>
+        <!--Fim campo telefone-->
+        <!--Inicio campo email-->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            placeholder="Ex: seuemail@gmail.com" required>
+        </div>
+        <!--Fim do campo email-->
+        <!--Campo para cor-->
+        <div>
+            <label for="cor">Selecione a cor</label>
+            <input type="color" name="cor" id="cor">
+        </div>
+        <!--Fim do campo cor-->
+        <!--Campo de multiplas linhas-->
+        <div>
+            <label for="mensage">Escreva sua mensagem</label>
+            <textarea name="mensage" id="mensage"></textarea>
+        </div>
+        <!--Fim do campo de multiplas linhas-->
+        <!--Botoes-->
+        <div>
+        <!--SUBMIT = Envio-->
+        <!--RESET = Limpar-->
+        <!--BUTTON = Chamar JS-->
+            <button type="submit">Enviar dados</button>
+            <button type="reset">Limpar dados</button>
+            <button type="button">Chamar JS</button>
+        </div>    
+        <div>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Limpar dados">
+            <input type="button" value="Chamar JS">
+        </div>
+        <!--Fim dos botoes-->
+    </form>
+    <!--Fim do formulario-->
+    <script src="script.js"></script>
+</body>
+</html>
