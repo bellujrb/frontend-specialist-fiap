@@ -1,4 +1,4 @@
-import Person from "./Pessoa";
+const Person = require('./Person')
 
 let person1 = new Person();
 let person2 = new Person();
@@ -15,3 +15,4 @@ console.log("NOMES: ");
 console.log(person1.name);
 console.log(person2.name);
 
+person1.eat();
