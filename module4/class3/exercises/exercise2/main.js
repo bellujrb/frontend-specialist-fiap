@@ -1,7 +1,6 @@
 const Student = require('./Student');
 
-student1 = new Student("Bellu", 1);
-student2 = new Student("Pedro", 2);
+let student1 = new Student("Bellu", 1);
 
 student1.grade(5);
 student1.grade(10);
