@@ -27,7 +27,7 @@ class Student {
         let media = this.calcMedia()
 
         if (media > 10){
-            return media = 10;
+            media = 10;
         }
 
         if (media >= 7) {
