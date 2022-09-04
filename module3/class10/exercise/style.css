@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    width: 100%;
+
+    background-color: blue;
+    color: black;
+
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container{
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 24rem 24rem 24rem 24rem;
+}
+.grid-container-1{
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.grid-container-2{
+    justify-content: center;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* FR = FRACAO */
+}
+
+.grid-container-3{
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1fr;
+}
+
+.grid-container-4{
+    /* MINMAX = VALOR MINIMO E MAXIMO */
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 2fr 2fr 1fr;  
+}
+
+/* NAO SABEMOS O NUMERO DE COLUNAS QUE TEREMOS NO LAYOUT
+autofit - MAX POSSIVEL de itens em uma unica linha.
+(Tentar nao quebrar a linha) caso os itens sejam pequeno ele 
+estica para preencher toda a linha. */
+
+.grid-container-5{
+    /* MINMAX = VALOR MINIMO E MAXIMO */
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* AUTOFILL = Igual o autofit, colocar o maximo itens na linha
+MAS NAO IRA PREENCHER O ESPACO OCIOSO.
+NAO ESTICA ATE O FINAL DA LINHA COMO O AUTOFIT. /* 
+
+
+
+/* Rows */
+
+.grid-container-6{
+
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px;
+}
