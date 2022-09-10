@@ -7,32 +7,23 @@ class HomeController extends Component {
         super(props);
 
         this.state = {
-            count: false
+            count: 0
         }
 
         const homeModel = new HomeModel();
         homeModel.getSomeInfo();
     }
-
+    
     render() {
         return <HomeView
         count={this.state.count} 
-        clickAdd={this.clickAdd}
-        clickRemove={this.clickRemove}
+        onClickButton={this.onClickButton}
         />
     }
 
-    clickAdd = () =>{
-        console.log("CLICK!")
+    onClickButton = () => {
         this.setState({
-            count: !this.state.count
-        })
-    }
-
-    clickRemove = () =>{
-        console.log("CLICK")
-        this.setState({
-            count: this.state.count -1
+            count: this.state.count + 1
         })
     }
 }
