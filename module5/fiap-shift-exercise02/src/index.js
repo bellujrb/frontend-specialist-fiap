@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HomeController from './Screen/Homes/HomeController';
+import HomeController from './Screen/Homes/HomeController'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

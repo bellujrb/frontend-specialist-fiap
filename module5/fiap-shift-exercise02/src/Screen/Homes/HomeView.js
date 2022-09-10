@@ -1,12 +1,11 @@
 import React from 'react';
 import './Home.css';
 
-const HomeView = (props) => {
+const HomeView = ({count}) => {
 
     return (
-        <div className='App'>
-        <p>COUNT: {props.count}</p>
-        <button onClick={ props.onClickButton } className='onClickButton'>CLICK</button>
+        <div>
+            <p>CONTADOR {count}</p>
         </div>
     );
 };
