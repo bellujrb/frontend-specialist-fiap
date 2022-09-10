@@ -1,0 +1,25 @@
+.App{
+    text-align: center;
+}
+
+.clickButton{
+    height: 56px;
+    width: 171px;
+    border-radius: 12px;
+}
+
+.clickButton:hover{
+    background-color: rgb(132, 132, 228);
+}
+
+.boxGreen{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+.boxRed{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
