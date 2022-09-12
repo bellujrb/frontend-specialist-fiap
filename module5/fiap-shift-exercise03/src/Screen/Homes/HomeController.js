@@ -28,6 +28,16 @@ class HomeController extends Component {
         }, 1000)
     }
 
+    componentWillUnmount(){
+        console.log("Unmount...")
+
+        if (this.state.status === "Paused"){
+            return false
+        } else {
+            return true
+        }
+    }
+
     start = () =>{
         this.setState({
             status: "Running"
@@ -40,13 +50,7 @@ class HomeController extends Component {
         })
     }
 
-    stop = () =>{
-        this.setState({
-            status: "Ending"
-        })
-    }
-
-    clear = () =>{
+    reset = () =>{
         this.setState({
             count: 0
         })
@@ -58,8 +62,7 @@ class HomeController extends Component {
             count={this.state.count}
             start={this.start}
             paused={this.paused}
-            stop={this.stop}
-            clear={this.clear}
+            reset={this.reset}
             />
         );
     }
