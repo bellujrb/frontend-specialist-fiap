@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
 
-export default function  HomeView ( { count }, { clickStart } )  {
+export default function  HomeView (props)  {
 
     return (
         <div>
-            <p>COUNT: {count}</p>
-            <button onClick={clickStart}>Start</button>
-            <button>Pause</button>
-            <button>Reset</button>
+            <p>COUNT: {props.count}</p>
+            <button onClick={props.clickStart}>Start</button>
+            <button onClick={props.clickPause}>Pause</button>
+            <button onClick={props.clickReset}>Reset</button>
         </div>
     );
 };
