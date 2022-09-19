@@ -7,20 +7,23 @@ const HomeController = () => {
     const [status, setStatus] = useState("Stop")
 
     useEffect(() => {
-        const interval = () => {
+        const interval = setInterval(() => {
             if (status === "Running") {
-                setInterval(() => {
-                    setCount((count) => count + 1)
-                }, 1000);
+                setCount((count) => count + 1)
             }
+        }, 1000);
+        return () => {
+            clearInterval(interval)
         }
-        return (() => {
-            clearInterval(interval);
-        })
     })
 
     const startButton = () => {
         setStatus("Running")
+    }
+
+    const stopButton = () =>{
+        setStatus("Stop")
+        setCount(0)
     }
 
 
@@ -28,6 +31,7 @@ const HomeController = () => {
         <HomeView
         count={count}
         startButton={startButton}  
+        stopButton={stopButton}
         />
     )
 }
