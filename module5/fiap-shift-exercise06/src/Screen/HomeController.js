@@ -7,7 +7,7 @@ const HomeController = () => {
     const [status, setStatus] = useState("Stop")
 
     useEffect(() => {
-        const internal = () => {
+        const interval = () => {
             if (status === "Running") {
                 setInterval(() => {
                     setCount((count) => count + 1)
@@ -15,7 +15,7 @@ const HomeController = () => {
             }
         }
         return (() => {
-            clearInterval(internal);
+            clearInterval(interval);
         })
     })
 
