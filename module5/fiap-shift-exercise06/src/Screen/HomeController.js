@@ -1,26 +1,25 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import HomeView from './HomeView';
 
 const HomeController = () => {
 
-    const [status, setStatus] = useStatus("Stop")
     const [count, setCount] = useState(0)
-    
-    useEffect(() =>{
-    //MOUNT
-    if (status === "Running"){
-    const internal = () => {
-        setInterval(() => {
-            setCount((count) => count + 1)
-        }, 1000);
-    }}
-    return (() => {
-    //UNMOUNT
-        clearInterval(internal);
-    })
+    const [status, setStatus] = useState("Stop")
+
+    useEffect(() => {
+        const internal = () => {
+            if (status === "Running") {
+                setInterval(() => {
+                    setCount((count) => count + 1)
+                }, 1000);
+            }
+        }
+        return (() => {
+            clearInterval(internal);
+        })
     })
 
-    const start = () =>{
+    const startButton = () => {
         setStatus("Running")
     }
 
@@ -28,7 +27,7 @@ const HomeController = () => {
     return (
         <HomeView
         count={count}
-        start={start}  
+        startButton={startButton}  
         />
     )
 }

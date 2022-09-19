@@ -4,7 +4,8 @@ import './Home.css';
 export default function HomeView (props) {
         return (
             <div>
-            <button onClick={props.start}>
+            <h1>COUNT {props.count}</h1>
+            <button onClick={props.startButton}>
                 START COUNT
             </button>
             </div>
