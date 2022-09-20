@@ -1,11 +1,11 @@
 import React from 'react';
-import notFoundView from './notFoundView'
+import NotFoundView from './NotFoundView';
 
-const notFoundController = () => {
+const NotFoundController = () => {
     return (
-        <notFoundView
+        <NotFoundView
         />
     )
 }
 
-export default notFoundController;
+export default NotFoundController;

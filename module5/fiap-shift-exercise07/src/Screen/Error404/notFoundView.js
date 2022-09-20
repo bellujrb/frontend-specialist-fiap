@@ -1,9 +1,12 @@
 import React from 'react';
+import './NotFound.css'
 
-export default function notFoundView () {
-        return (
-            <div>
-                <h1>Error 404</h1>
-            </div>
-        );
-    }
+const NotFoundView = () => {
+    return (
+        <div>
+            <p>ERROR 404</p>
+        </div>
+    );
+};
+
+export default NotFoundView;

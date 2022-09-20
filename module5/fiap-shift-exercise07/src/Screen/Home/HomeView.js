@@ -1,8 +1,9 @@
 import * as React from 'react';
 import './Home.css'
 import { Box, Container, CircularProgress, Grid, Typography } from '@mui/material';
+import useAPI from '../../Services/APIs/Common/useAPI';
 
-export default function HomeView({ loading, arrayToys }) {
+export default function HomeView({ loading, arrayToys , goToPage }) {
 
     let name = "";
     let infoBox = [];
@@ -15,10 +16,15 @@ export default function HomeView({ loading, arrayToys }) {
 
         )
     } else if (arrayToys) {
-        arrayToys.toys.forEach(toy => {
+        arrayToys.toys.forEach((toy) => {
             infoBox.push(
                 <Grid key={toy._id} item lg={12} xl={12} className="itemClass">
-                    <Typography gutterBottom variant="body" className="text">
+                    <Typography 
+                    gutterBottom 
+                    variant="body" 
+                    className="text"
+                    onClick={() => goToPage(toy)}
+                    >
                         Info {toy.name}
                     </Typography>
                 </Grid>
