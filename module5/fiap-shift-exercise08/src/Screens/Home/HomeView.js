@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import useAPI from '../../Services/APIs/Common/useAPI';
 
-class HomeView extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+export default function HomeView() {
+    return (
+        <div>
+
+        </div>
+    );
 }
-
-export default HomeView;
