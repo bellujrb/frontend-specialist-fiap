@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import useAPI from '../../Services/APIs/Common/useAPI';
+import toys from '../../Services/APIs/Toys/toys';
 import HomeView from './HomeView';
 
-const HomeController = () => {
+export default function HomeController() {
 
+    const getToysGetAPI = useAPI(toys.getAllToys);
 
-    return (
-        <HomeView
-            
-        />
-    )
+    useEffect(() => {
+        getToysGetAPI.request();
+    }, []);
+
+    console.log(getToysGetAPI.data)
+    return <HomeView arrayToys={getToysGetAPI.data} loading={getToysGetAPI.loading} />
 }
-
-export default HomeController;
