@@ -1,8 +1,9 @@
-import api from "../Common/api"  // import api.JS
+import api from "../APIs/Common/api"  
 
-const getPersons = () => api.get("/persons/getPersons/"); // Fazer uma CONEXAO GET
+const getPersonsAPI = () => api.get("/persons/getPersons"); 
 
-const exportedObject = { // Exportar
-    getPersons,
+const exportedObject = { 
+    getPersonsAPI,
 };
+
 export default exportedObject;
