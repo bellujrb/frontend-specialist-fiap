@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function HomeView ({data, loading}){
+export default function HomeView ({data, loading, info}){
 
     return (
       <div className='App'>
@@ -8,6 +8,7 @@ export default function HomeView ({data, loading}){
         <button onClick={() => {
           alert("PUXANDOS DADOS DO: " + data.name);
           alert("SEGUIDORES: " + data.followers);
+          alert(info)
         }}>
           CLIQUE AQUI
         </button>
