@@ -13,4 +13,3 @@
 |  [3. Front Programming]() | HTML, CSS, JS | 30H |
 |  [4. JS - Advanced]() | HTML, JS | 15H |
 |  [5. React Framework]() | HTML, JS, REACT | ?H |
-|  [6. Angular Framework]() | HTML, JS, ANGULAR | ?H |
